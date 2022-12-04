@@ -9,7 +9,7 @@ startBtn.addEventListener('click', () => {
   changeBackgroundColor();
   timerId = setInterval(changeBackgroundColor, 1000);
 });
-btnStop.addEventListener('click', onClick => {
+stopBtn.addEventListener('click', onClick => {
   startBtn.disabled = false;
   stopBtn.disabled = true;
   clearInterval(timerId);
